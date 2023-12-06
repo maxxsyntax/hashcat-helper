@@ -1,4 +1,4 @@
 # hashcat-masks
-Masks for Hashcat mode 22000 and 22001.  
+Suggested mask for Hashcat mode 22000 and 22001.  
 Regional CPE was distributed with an implied keyspace of 95^12 (540,360,087,662,636,962,890,625 possibilites), but due to an implementation error, can be reduced to 16^2 (256 possibilites)
 An OUI of the vendor (6 characters) and the last 4 bytes of the BSSID (4 characters) were used as a consistent factors for key generation.  This leaves only 2 hex characters to be recovered. 
