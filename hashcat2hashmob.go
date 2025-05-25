@@ -31,9 +31,9 @@ func grepInFile(filename string, searchTerm string) ([]string, error) {
 }
 
 func main() {
-    otherFilename := "otherfile.txt" // File to grep in
+    otherFilename := "22000.left" // 22000 left file from hm
 
-    scanner := bufio.NewScanner(os.Stdin)
+    scanner := bufio.NewScanner(os.Stdin)  // hashcat --show 22000.left | go run go hashcat2hashmob.go
     pattern := `([a-f0-9]+:){3}[A-Za-z0-9_\.\ ]+(-[A-Za-z0-9_\.\ ]+)?:[0-9]{8}`
     re := regexp.MustCompile(pattern)
 
