@@ -34,7 +34,7 @@ func main() {
     otherFilename := "22000.left" // 22000 left file from hm
 
     scanner := bufio.NewScanner(os.Stdin)  // hashcat --show 22000.left | go run go hashcat2hashmob.go
-    pattern := `([a-f0-9]+:){3}[A-Za-z0-9_\.\ ]+(-[A-Za-z0-9_\.\ ]+)?:[0-9]{8}` \\pattern to match 8 digit numers as password. change to match mask
+    pattern := `([a-f0-9]+:){3}[A-Za-z0-9_\.\ ]+(-[A-Za-z0-9_\.\ ]+)?:[0-9]{8}` //pattern to match 8 digit numers as password. change to match mask
     re := regexp.MustCompile(pattern)
 
     for scanner.Scan() {
